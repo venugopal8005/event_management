@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./example.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="nonslider.css">
+
+    <style>
+        .videoo {
+            position: relative;
+            width: 100%;
+            max-width: 720px; /* Adjust as needed */
+            margin: auto;
+        }
+
+        .videoo video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .ops_main {
+            display: flex;
+            gap: 20px;
+        }
+
+        .ops {
+            cursor: pointer;
+        }
+
+        .sliderstuff {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bdy">
+        <div class="videoo">
+            <video src="./5818973-hd_1280_720_24fps.mp4" controls></video>
+        </div>
+        <div class="main" id="main">
+            <div class="main1">
+                <div class="left">
+                    <div class="m1">P</div>
+                    <div class="m1">I</div>
+                    <div class="m1">X</div>
+                    <div class="m1">E</div>
+                    <div class="m1">L</div>
+                </div>
+                <div class="right">
+                    <div class="m2">E</div>
+                    <div class="m2">V</div>
+                    <div class="m2">E</div>
+                    <div class="m2">N</div>
+                    <div class="m2">T</div>
+                    <div class="m2">S</div>
+                </div>
+            </div>
+            <div class="main2">
+                <button onclick="swipe()">VISIT OUR PAGE</button>
+            </div>
+        </div>
+
+        <div class="page1">
+            <div class="nav1">
+                <div class="ops1"><img src="./Images/logo.png" alt=""></div>
+                <div class="ops_main">
+                    <div class="ops">Home</div>
+                    <div class="ops">Events</div>
+                    <div class="ops">About</div>
+                    <div class="ops">Contact</div>
+                </div>
+            </div>
+
+            <div class="sliderstuff">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="example.js"></script>

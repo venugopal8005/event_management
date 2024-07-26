@@ -1,0 +1,60 @@
+
+.page1{
+    position: absolute;
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    /* padding: 0; */
+    /* background-color:black; */
+}
+
+
+.options{
+    /* display: flex; */
+    /* gap: 10; */
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.ops{
+    height: 70px;
+    width: 200px;
+    color: white;
+}
+.nav1{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+.ops img{
+    width: 200px;
+    height: 70px;
+}
+.header {
+    position: absolute;
+
+}
+.video1{
+    width: 100%;
+    height: 100svh;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.video1 video{
+    position: absolute;
+
+    width: 100%;
+    height: 100svh;
+    margin: 0;
+    padding: 0;
+}
