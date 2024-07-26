@@ -318,14 +318,14 @@ body{
 }
 
 .body {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(135deg, #f8b500, #fceabb);
     flex-direction: column;
     position: relative;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 .page-heading {
