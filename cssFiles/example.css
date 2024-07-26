@@ -509,7 +509,7 @@ body{
     .content_btn {
         top: 200px; /* Adjust as necessary */
         width: 100%;
-        height: fit-content;
+        /* height: fit-content; */
         position: absolute;
     }
 
