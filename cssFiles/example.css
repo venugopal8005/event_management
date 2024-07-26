@@ -218,6 +218,7 @@ body{
   display: block;
   width: 100%;
 }
+
 .swiper-wrapper{
   display: flex;
   align-items: center;
@@ -435,7 +436,7 @@ body{
 
 .content_btn {
     position: absolute;
-    bottom: 50px; /* Adjust as necessary */
+    bottom: 130px; /* Adjust as necessary */
     width: 100%;
     text-align: center;
     background: rgba(248, 181, 0, 0.15);
@@ -484,6 +485,9 @@ body{
     .content_btn {
         bottom: 10px; /* Adjust as necessary */
         width: 90%;
+
+
+
     }
 
     .content {
