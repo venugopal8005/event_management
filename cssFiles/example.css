@@ -436,7 +436,7 @@ body{
 
 .content_btn {
     position: absolute;
-    bottom: 130px; /* Adjust as necessary */
+    bottom: 150px; /* Adjust as necessary */
     width: 100%;
     text-align: center;
     background: rgba(248, 181, 0, 0.15);
