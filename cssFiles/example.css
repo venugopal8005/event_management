@@ -507,7 +507,7 @@ body{
     }
 
     .content_btn {
-        bottom: 0; /* Adjust as necessary */
+        bottom: 500px; /* Adjust as necessary */
         width: 100%;
         height: fit-content;
     }
