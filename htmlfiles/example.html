@@ -149,7 +149,7 @@
             <h1 onclick="display()" >Haldi</h1>
         </div>
  
-        <div class="cards">
+        <div class="cards" id="car1">
             <div class="container">
                 <div class="card" style="--i:-3;" data-text=""><img src="https://www.mrcoconut.in/img/blog/16933327952024312418.jpg"/></div>  
                 <div class="card" style="--i:-2;" data-text=""><img src="https://i.pinimg.com/736x/4c/1d/ea/4c1dea856388879fa5ea59fa90c73bff.jpg"/></div>  
@@ -171,7 +171,7 @@
             <div class="page-heading" > 
                 <h1 onclick="display1()" id="h11" href = "hey">Pre Wedding</h1>
             </div>
-            <div class="cards">
+            <div class="cards" id="car">
                 <div class="container">
                     <div class="card" style="--i:-3;" data-text=""><img src="https://i.pinimg.com/736x/b9/cd/d8/b9cdd8c6883f3dc8be8e0ef10bb900cc.jpg"/></div>  
                     <div class="card" style="--i:-2;" data-text=""><img src="https://images.prismic.io/sombitdeyphotography/6f298ef2-534b-4ef8-b002-1e485402da90_8.+create+a+story+with+a+dramatic+sunset+at+the+beach.jpg?auto=compress,format&rect=0,0,1548,2048&w=740&h=979"/></div>  
@@ -391,7 +391,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-
+        var x = document.getElementsByClassName("cards")[2];
+        window.addEventListener('load', () => {
+            document.querySelector('.container1').classList.add('cards-open');
+        });
     </script>
 
     <script src="../js files/example.js"></script>
