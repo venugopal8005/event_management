@@ -44,7 +44,7 @@ function display(){
         x.style.opacity = "1";
         x.style.zIndex = "1000"; 
         x.style.display="flex"
-        alert("heyy this is sangeet");
+        // alert("heyy this is sangeet");
         
         z=false;
     }
@@ -160,7 +160,7 @@ function display5(){
 var a=true;
 function display6(){
     if(a==true){
-        alert("heyy this is bride to be");
+        // alert("heyy this is bride to be");
         var x = document.getElementById("bdyyy6");
         x.style.opacity = "1";
         x.style.zIndex = "1000";
