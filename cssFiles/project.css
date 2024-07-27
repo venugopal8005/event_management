@@ -63,41 +63,57 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
 }
+.para{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 10px;
+    /* background-color: aqua; */
+    background-color: #E9E2DA;
+    border-radius: 10px;
 
+}
 .card {
     width: 75px;
     border-radius: 10px;
     background-size: cover;
     cursor: pointer;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 2rem;
     margin: 0 10px;
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-
+    /* z-index: -99; */
     /* background-color: rgba(0, 0, 0, 0.382); */
     /* backdrop-filter: blur(5px); */
 }
 
 .card .row {
+    border-radius: 2rem;
     color: green;
     display: flex;
     flex-wrap: nowrap;
     font-weight: 800;
+    /* height: 30px; */
     width: 100%;
+    position: relative;
     /* backdrop-filter: blur(5px); */
-
-    /* background-color: black; */
+    /* background-color: #E9E2DA; */
+    margin-top: 420px;
+    /* z-index: 999; */
+}
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.card .row .icon {
+ /* .card .row .icon {
     background: #223;
     color: white;
     border-radius: 50%;
     width: 50px;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px;
@@ -108,21 +124,21 @@ body {
 }
 .icon{
     display: none;
-}
+} */
 .card .row .description {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    overflow: hidden;
+    /* justify-content: space-evenly; */
+    align-items: end;
+    /* flex-direction: row; */
+    /* overflow: hidden; */
     height: 80px;
-    width: 320px;
+    width: 100%;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
-    gap: 35px;
+    /* gap: 35px; */
 }
 button{
     display: none;
@@ -130,38 +146,28 @@ button{
 .description p {
     width: 100%;
     color: black;
-    padding-top: 25px;
-    font-size: 45px;
-
-}
-
-.description h4 {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: blue;
-}
-h4{
-    transition: all 1s;
-}
-h4:hover{
-    color: red;
-    transform: scale(1.07);
+    /* padding-top: 25px; */
+    padding-left: 0px;
+    font-size: 35px;
 }
 p{
     transition: all 1s;
 }
 p:hover{
-    color: rgb(19, 10, 188);
+    color: rgb(0, 0, 0);
     transform: scale(1.1);
 }
 .buu{
+    position: absolute;
     width: fit-content;
     height: 40px;
     border-radius: 20px;
     border: 1px solid whitesmoke;
     box-shadow: 5px 5px 5px black;
-    margin-top: 20px;
-    margin-left: 150px;
+    /* margin-top: 20px;
+    margin-left: 150px; */
+    right: 30px;
+    top: 30px;
     /* margin-left: 40px; */
     display: none;
     /* background-color: aliceblue; */
@@ -196,12 +202,7 @@ input:checked + label {
     backdrop-filter: blur(5px);
         
     } */
-    .icon{
-        display: flex;
-        justify-content: center;
-         align-items: center;
-        margin: 15px;
-    }
+   
     .buu{
         display: flex;
         padding: 5px;
@@ -216,28 +217,34 @@ input:checked + label .description {
 .card[for="c1"] {
     background-image: url('../Images/sankar2.png');
     background-size: cover;
+    border: 2px solid black;
 }
 .card[for="c2"] {
     background-image: url('../Images/venu1.png');
+    border: 2px solid black;
     background-size: cover;
 }
 .card[for="c3"] {
     background-image: url('../Images/surya1.png');
+    border: 2px solid black;
     background-size: cover;
 
 }
 .card[for="c4"] {
     background-image: url('../Images/mahi1.png');
+    border: 2px solid black;
     background-size: cover;
 
 }
 .card[for="c5"] {
     background-image: url('../Images/sudha1.png');
+    border: 2px solid black;
     background-size: cover;
 
 }
 .card[for="c6"] {
     background-image: url('../Images/mouli2.png');
+    border: 2px solid black;
     background-size: cover;
 
 }
@@ -245,6 +252,7 @@ input:checked + label .description {
 .card:hover{
     transform: scale(1.04);
     box-shadow: 5px 5px 5px gray;
+    border: 2px solid white;
 }
 .over {
     width: 30%;
