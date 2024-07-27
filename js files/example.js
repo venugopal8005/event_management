@@ -39,13 +39,15 @@ var swiper = new Swiper(".mySwiper", {
 });
 var z=true;
 function display(){
+
     if(z==true){
         var x = document.getElementById("bdyyy");
         x.style.opacity = "1";
         x.style.zIndex = "1000"; 
         x.style.display="flex"
         // alert("heyy this is sangeet");
-        
+    document.querySelector('.container').classList.add('cards-open');
+
         z=false;
     }
     else{

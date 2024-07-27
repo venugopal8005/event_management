@@ -469,6 +469,15 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
+.cards-open .card1 {
+  transform: rotate(calc(var(--j) * 5deg)) translate(calc(var(--j) * 120px), -50px);
+}
+
+.cards-open .card1 img {
+  opacity: 1;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
 
 .book-now {
     padding: 10px 20px;
@@ -556,9 +565,8 @@ body{
   color: #fff;
   font-family: 'Times New Roman', Times, serif;
   background: linear-gradient(45deg, #fff, #ffea00);
-
-
-     
+  
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -815,4 +823,12 @@ body{
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+}
+.cards-open  {
+  transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 120px), -50px);
+}
+
+.cards-open .card1 img {
+  opacity: 1;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
 }
