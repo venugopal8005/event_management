@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssFiles/project.css">
+    <title>Animated Flex Cards</title>
+</head>
+<body>
+    <div class="video">
+    <div class="heading"><h1>TEAM MEMBERS</h1></div>
+    <div class="win" onclick="about()">About us</div>
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <!-- <div class="icon">1</div> -->
+                    <div class="description">
+                        <!-- <h4>SHANKAR</h4> -->
+                        <p>Team leader</p>
+                    </div>
+                    <div class="buu" onclick="fun1()"><img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=000000"></div>
+                    <div class="button" onclick="fun1()">>></div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <!-- <div class="icon">2</div> -->
+                    <div class="description">
+                        <!-- <h4>GOPAL</h4> -->
+                        <p>Team Manager</p>
+                    </div>
+                    <div class="buu" onclick="fun2()"><img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=000000"></div>
+                    <div class="button" onclick="fun2()">>></div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <!-- <div class="icon">3</div> -->
+                    <div class="description">
+                        <!-- <h4>SURESH</h4> -->
+                        <p>Team Member</p>
+                    </div>
+                    <div class="buu" onclick="fun3()"><img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=000000"></div>
+                    <div class="button" onclick="fun3()">>></div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4" >
+            <label for="c4" class="card">
+                <div class="row">
+                    <!-- <div class="icon">4</div> -->
+                    <div class="description">
+                        <!-- <h4>MAHESWARI</h4> -->
+                        <p>Team Member</p>
+                    </div>
+                    <div class="buu" onclick="fun4()"><img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=000000"></div>
+                    <div class="button" onclick="fun4()">>></div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c5" checked>
+            <label for="c5" class="card">
+                <div class="row">
+                    <!-- <div class="icon">5</div> -->
+                    <div class="description">
+                        <!-- <h4>SUDHA</h4> -->
+                        <p>Team Member</p>
+                    </div>
+                    <div class="buu" onclick="fun5()"><img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=000000"></div>
+                    <div class="button" onclick="fun5()">>></div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c6" checked>
+            <label for="c6" class="card">
+                <div class="row">
+                    <!-- <div class="icon">6</div> -->
+                    <div class="description">
+                        <!-- <h4>MOULI</h4> -->
+                        <p>Team Member</p>
+                    </div>
+                    <div class="buu" onclick="fun6()"><img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=000000"></div>
+                    <div class="button" onclick="fun6()">>></div>
+                </div>
+            </label>
+        </div>
+        <div class="over">
+            <div class="over1 overs">
+            <div class="image">
+                <div class="img1"></div>
+                <div class="wrong" onclick="remove1()"><img src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"></div>
+            </div>
+            <div class="cont">
+                NAME:SHANKAR<br><br>
+                ROLL NO:22A91A<br><br>
+                BRANCH:AIML<br><br>
+                <!-- ph no:XXXXX<br><br> -->
+                COLLEGE:ADITYA UNIVERSITY<br><br>
+            </div>
+            </div>
+            <div class="over2 overs">
+                <div class="image">
+                <div class="img2"></div>
+                <div class="wrong" onclick="remove2()"><img src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"></div>
+                </div>
+                <div class="cont">
+                NAME:GOPAL<br><br>
+                ROLL NO:22A91A05<br><br>
+                BRANCH:CSE<br><br>
+                <!-- PH NO:XXXXX<br><br> -->
+                COLLEGE:ADITYA UNIVERSITY<br><br>
+                </div>
+            </div>
+        <div class="over3 overs">
+            <div class="image">
+                <div class="img3"></div>
+                <div class="wrong" onclick="remove3()"><img src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"></div>
+            </div>
+            <div class="cont">
+                NAME:SURESH<br><br>
+                ROLL NO:22MH1A0538<br><br>
+                BRANCH:CSE<br><br>
+                <!-- ph no:XXXXX<br><br> -->
+                COLLEGE:ADITYA UNIVERSITY<br><br>
+            </div>
+        </div>
+        <div class="over4 overs">
+            <div class="image">
+                <div class="img4"></div>
+                <div class="wrong" onclick="remove4()"><img src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"></div>
+            </div>
+            <div class="cont">
+                NAME:MAHESWARI<br><br>
+                ROLL NO:22A91A<br><br>
+                BRANCH:AIML<br><br>
+                <!-- ph no:XXXXX<br><br> -->
+                COLLEGE:ADITYA UNIVERSITY<br><br>
+            </div>
+        </div>
+        <div class="over5 overs">
+            <div class="image">
+                <div class="img5"></div>
+                <div class="wrong" onclick="remove5()"><img src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"></div>
+            </div>
+            <div class="cont">
+                NAME:SUDHA<br><br>
+                ROLL NO:22A91A<br><br>
+                BRANCH:AIML<br><br>
+                <!-- ph no:XXXXX<br><br> -->
+                COLLEGE:ADITYA UNIVERSITY<br><br>
+            </div>
+        </div>
+        <div class="over6 overs">
+            <div class="image">
+                <div class="img6"></div>
+                <div class="wrong" onclick="remove6()"><img src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"></div>
+            </div>
+            <div class="cont">
+                NAME:MOULI<br><br>
+                ROLL NO:22A91A<br><br>
+                BRANCH:CSE<br><br>
+                <!-- ph no:XXXXX<br><br> -->
+                COLLEGE:ADITYA UNIVERSITY<br><br>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="../js files/project.js"></script>
+
+</body>
+</html>
