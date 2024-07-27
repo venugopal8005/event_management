@@ -132,8 +132,7 @@ button{
     color: black;
     padding-top: 25px;
     font-size: 45px;
-    position: absolute;
-    left: 100px;
+
 }
 
 .description h4 {
@@ -219,7 +218,7 @@ input:checked + label .description {
     background-size: cover;
 }
 .card[for="c2"] {
-    background-image: url('../Images/gopal3.png');
+    background-image: url('../Images/venu1.png');
     background-size: cover;
 }
 .card[for="c3"] {
