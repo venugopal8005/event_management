@@ -48,7 +48,7 @@ body{
   width: 50%;
   display: flex;
   align-items: center;
-  background-color:  #273F6F;
+  background-color:  #bbc9e5;
   
   border: solid white ;
   border-right: 0;
@@ -178,7 +178,6 @@ body{
   animation-duration: 3s;
   padding: 20px 10px;
   font-weight: bold;
-  /* color: linear-gradient(white,white,grey,grey); */
   /* display: none; */
 
 }
@@ -226,6 +225,7 @@ body{
   background-size: cover;
   width: 400px;
   height: 400px;
+  border-radius: 10px;
 }
 
 .swiper-slide img {
@@ -252,7 +252,9 @@ body{
   margin: 0;
   /* padding: 0; */
   background-color:rgb(134, 119, 119);
-  background-image: url("../Images/bgb.jpg");
+  /* background-image: url("../Images/pexels-trungnguyenphotog-2959192\ \(1\).jpg"); */
+  background-image: url("../Images/home3.jpeg");
+  background-size: 100% 100%;
 }
 
 .ops{
