@@ -15,7 +15,8 @@ a{
     align-items: center;
     flex-direction: column;
     width:100%;
-    background:linear-gradient(#F8B195,#F67280,#C06C84,#6C5B7B,#355C7D);
+    /* background:linear-gradient(#F8B195,#F67280,#C06C84,#6C5B7B,#355C7D); */
+    background-image: url("../Images/bg3.jpeg");
 }
 .testimonial-heading{    
     letter-spacing: 1px;
