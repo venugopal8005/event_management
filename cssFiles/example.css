@@ -170,13 +170,15 @@ body{
   border: solid white;
   background:none;
   outline: none;
-  background: linear-gradient(45deg, #FFD700, #E3C389, #DAA520, #E3C389, #FFD700);
+  /* background: linear-gradient(45deg, #FFD700, #E3C389, #DAA520, #E3C389, #FFD700); */
+  background: linear-gradient(100deg, white,white,white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;;
   animation-name: topScroll;
   animation-duration: 3s;
   padding: 20px 10px;
   font-weight: bold;
+  /* color: linear-gradient(white,white,grey,grey); */
   /* display: none; */
 
 }
