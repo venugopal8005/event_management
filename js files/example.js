@@ -32,7 +32,7 @@ var swiper = new Swiper(".mySwiper", {
         slideShadows: true,
     },
     autoplay: {
-        delay: 3000, // Auto slide every 2.5 seconds
+        delay: 10000, // Auto slide every 2.5 seconds
         disableOnInteraction: false,
     },
     loop: true,
@@ -44,6 +44,7 @@ function display(){
         x.style.opacity = "1";
         x.style.zIndex = "1000"; 
         x.style.display="flex"
+        alert("heyy this is sangeet");
         
         z=false;
     }
@@ -159,10 +160,11 @@ function display5(){
 var a=true;
 function display6(){
     if(a==true){
+        alert("heyy this is bride to be");
         var x = document.getElementById("bdyyy6");
         x.style.opacity = "1";
-        x.style.zIndex = "1000"; 
-        x.style.display="flex"
+        x.style.zIndex = "1000";
+        x.style.display="flex";
         
         a=false;
     }
