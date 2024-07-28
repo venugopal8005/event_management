@@ -1,0 +1,117 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#F8B195, #F67280, #C06C84, #6C5B7B, #355C7D);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.initial-login-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(to right, red, yellow);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.form-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 10px;
+    border: black;
+    /* background-image: url('https://img.freepik.com/free-vector/schedule-concept-illustration_114360-2391.jpg?t=st=1722179460~exp=1722183060~hmac=aa841927f5bd720f168715b4369fcb09f067e69695a468c2c241507dc4567185&w=740'); */
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.form-container .w1, .form-container .w3, .form-container .w5, .form-container .w7, .form-container .links {
+    opacity: 0;
+    position: relative;
+}
+
+.form-container .w2, .form-container .w4, .form-container .w6 {
+    opacity: 0;
+    position: relative;
+}
+
+.w1{
+    font-size: 25px;
+    color:white;
+}
+
+.w2, .w3, .w4, .w5, .w6, .w7 {
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.w2 input, .w3 input, .w4 input, .w5_select, .w6 input {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    width: calc(100% - 20px);
+    color: black;
+    padding: 10px;
+}
+
+.w5_select {
+    width: 100%;
+    outline: none;
+}
+
+input {
+    border: transparent;
+    outline: none;
+}
+
+.w7 {
+    background: linear-gradient(to right, red, yellow);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Ubuntu, Cantarell, "Fira Sans", sans-serif;
+}
+
+.links {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.p1, .p2 {
+    margin: 10px 0;
+    color: white;
+    font-family: "SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Ubuntu, Cantarell, "Fira Sans", sans-serif;
+    cursor: pointer;
+}
