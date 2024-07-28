@@ -10,6 +10,8 @@ body {
     background: linear-gradient(#F8B195, #F67280, #C06C84, #6C5B7B, #355C7D);
     flex-direction: column;
     overflow: hidden;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=600');
 }
 
 .initial-login-btn {
@@ -32,7 +34,8 @@ body {
     border: black;
     /* background-image: url('https://img.freepik.com/free-vector/schedule-concept-illustration_114360-2391.jpg?t=st=1722179460~exp=1722183060~hmac=aa841927f5bd720f168715b4369fcb09f067e69695a468c2c241507dc4567185&w=740'); */
     background-size: cover;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
+    height: 70%;
 }
 
 @keyframes slideInLeft {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../cssFiles/login.css">
+</head>
+<body>
+    <button class="initial-login-btn" onclick="showForm()">Book Now</button>
+    <div class="form-container">
+        <h2 class="w1">Book Now</h2>
+        <form id="bookingForm" onsubmit="handleSubmit(event)">
+            <div class="w2">
+                <input type="text" placeholder="Enter your Name..." id="name" required>
+            </div>
+            <div class="w3">
+                <input type="number" placeholder="Enter your Phone Number..." id="phone" required>
+            </div>
+            <div class="w4">
+                <input type="email" placeholder="Enter your Email..." id="email" required>
+            </div>
+            <div class="w5">
+                <select id="event" class="w5_select" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="Haldi">Haldi</option>
+                </select>
+            </div>
+            <div class="w6">
+                <input type="date" placeholder="Enter your event date..." id="eventDate" required>
+            </div>
+            <div class="w7">
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+    </div>
+    <button onclick="showStoredData()">Show Stored Data</button>
+    <div id="storedDataContainer"></div>
+    <script src="../js files/login.js"></script>
+    <script>
+        function showForm() {
+            document.querySelector('.initial-login-btn').style.display = 'none';
+            document.querySelector('.form-container').style.display = 'flex';
+
+            const elements = [
+                { selector: '.w1', delay: 500 },
+                { selector: '.w2', delay: 1000 },
+                { selector: '.w3', delay: 1500 },
+                { selector: '.w4', delay: 2000 },
+                { selector: '.w5', delay: 2500 },
+                { selector: '.w6', delay: 3000 },
+                { selector: '.w7', delay: 3500 },
+                { selector: '.links', delay: 4000 }
+            ];
+
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    const el = document.querySelector(element.selector);
+                    el.style.display = 'flex'; // Make sure the element is visible
+                    if (index % 2 === 0) {
+                        el.style.animation = 'slideInLeft 1s forwards';
+                    } else {
+                        el.style.animation = 'slideInRight 1s forwards';
+                    }
+                }, element.delay);
+            });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const eventValue = document.getElementById('event').value;
+            const eventDate = document.getElementById('eventDate').value;
+
+            const bookingData = {
+                name,
+                phone,
+                email,
+                event: eventValue,
+                eventDate
+            };
+
+            localStorage.setItem('bookingData', JSON.stringify(bookingData));
+
+            window.alert("Booking Successful");
+            window.location.href = "http://192.168.45.224:5501/htmlfiles/example.html#";
+        }
+
+        
+    </script>
+</body>
+</html>
