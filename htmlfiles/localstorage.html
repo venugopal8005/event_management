@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Data</title>
+</head>
+<body>
+    <button onclick="showStoredData()">CLICK ME</button>
+    <div id="storedDataContainer"></div>
+    <script>
+        function showStoredData() {
+            const bookingData = localStorage.getItem('bookingData');
+            if (bookingData) {
+                const data = JSON.parse(bookingData);
+                document.getElementById('storedDataContainer').innerHTML = `
+                    <p>Name: ${data.name}</p>
+                    <p>Phone: ${data.phone}</p>
+                    <p>Email: ${data.email}</p>
+                    <p>Event: ${data.event}</p>
+                    <p>Event Date: ${data.eventDate}</p>
+                `;
+            } else {
+                document.getElementById('storedDataContainer').innerHTML = '<p>No booking data found.</p>';
+            }
+        }
+    </script>
+</body>
+</html>

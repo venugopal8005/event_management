@@ -9,6 +9,9 @@ body{
   margin: 0;
   padding: 0;
 }
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .main{
   display: flex;
   width: 100%;
@@ -453,7 +456,7 @@ body{
 
 .content_btn {
     position: absolute;
-    bottom: 30px !important;
+    bottom: 00px !important;
     width: 100%;
     text-align: center;
     background: rgba(248, 181, 0, 0.15);
