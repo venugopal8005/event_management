@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="../cssFiles/allpage.css"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(#7F042F, #BD0856, #af2646, #F48D7B, #F79BCC);
+    }
+</style>
+<body>
+    <div class="body" id="bdyyy1">
+        <div class="page-heading" > 
+            <h1 onclick="display1()" id="h11" href = "hey">Pre Wedding</h1>
+        </div>
+        <div class="cards" id="car">
+            <div class="container">
+                <div class="card" style="--i:-3;" data-text=""><img src="https://i.pinimg.com/736x/b9/cd/d8/b9cdd8c6883f3dc8be8e0ef10bb900cc.jpg"/></div>  
+                <div class="card" style="--i:-2;" data-text=""><img src="https://images.prismic.io/sombitdeyphotography/6f298ef2-534b-4ef8-b002-1e485402da90_8.+create+a+story+with+a+dramatic+sunset+at+the+beach.jpg?auto=compress,format&rect=0,0,1548,2048&w=740&h=979"/></div>  
+                <div class="card" style="--i:-1;" data-text=""><img src="https://i.pinimg.com/236x/ab/6a/ea/ab6aea4e3596a3e8d2863e490f4ba1cb.jpg"/></div>  
+                <div class="card" style="--i:0;" data-text=""><img src="https://i.pinimg.com/736x/cf/4a/ab/cf4aabe47d9ff6892311af43acd70759.jpg"/></div>  
+                <div class="card" style="--i:1;" data-text=""><img src="https://cdn0.weddingwire.in/vendor/6577/3_2/1280/jpg/wedding-photography-uday-jadhav-photography-pre-wedding-shoot-2_15_366577-161900617330704.jpeg"/></div>  
+                <div class="card" style="--i:2;" data-text=""><img src="https://image.wedmegood.com/resized/800X/uploads/member/528796/1552909746_01__18_.jpg"/></div>  
+                <div class="card" style="--i:3;" data-text=""><img src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/11/Saas-Bahu-Temple-1.jpg"/></div>
+            </div>
+        </div>
+        <div class="content_btn">
+            <p class="content">
+                "Celebrate the blossoming of your love with a pre-wedding photoshoot that encapsulates the essence of your relationship. Each click immortalizes the excitement leading up to your big day,a gallery of heartfelt moments to treasure forever."
+            </p>
+            <button class="book-now">Book Now</button>
+        </div>
+        </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.classList.add('opened');
+        });
+    });
+</script>
+
+</body>
+</html>

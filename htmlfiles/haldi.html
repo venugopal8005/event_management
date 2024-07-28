@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haldi</title>
+    <link rel="stylesheet" href="../cssFiles/allpage.css"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(#e58434, #ea8c41, #ef6f5c, #db8168, #b0a333);
+    }
+</style>
+<body>
+    <div class="body" id="bdyyy">
+        <div style="background-color: rgb(106, 33, 33); width: 50px; height: 50px;"  id="closing" ><i class="fa-sharp-duotone fa-solid fa-xmark"></i></div>
+
+    <div class="page-heading">
+        <h1 onclick="display()" >Haldi</h1>
+    </div>
+
+    <div class="cards" id="car1">
+        <div class="container">
+            <div class="card" style="--i:-3;" data-text=""><img src="https://www.mrcoconut.in/img/blog/16933327952024312418.jpg"/></div>  
+            <div class="card" style="--i:-2;" data-text=""><img src="https://i.pinimg.com/736x/4c/1d/ea/4c1dea856388879fa5ea59fa90c73bff.jpg"/></div>  
+            <div class="card" style="--i:-1;" data-text=""><img src="https://i.pinimg.com/736x/46/87/4c/46874cedd3b707590731b0e11d5e3818.jpg"/></div>  
+            <div class="card" style="--i:0;" data-text=""><img src="https://i.pinimg.com/736x/d8/5d/0a/d85d0a7ff65f741d181e27fdd044d5bd.jpg"/></div>  
+            <div class="card" style="--i:1;" data-text=""><img src="https://i.pinimg.com/736x/dc/64/a0/dc64a01fd009816f1871a35d916c148b.jpg"/></div>  
+            <div class="card" style="--i:2;" data-text=""><img src="https://media.licdn.com/dms/image/D4D12AQGDNIMXtEm_GQ/article-cover_image-shrink_600_2000/0/1685511770550?e=2147483647&v=beta&t=T3JPzuoucmwV35MMlHk7i182wpZejH46toYBGXut_zk"/></div>  
+            <div class="card" style="--i:3;" data-text=""><img src="https://wedbook.in/wp-content/uploads/2022/02/Haldi-Decor-1024x882.jpg"/></div>
+        </div>
+    </div>
+    <div class="content_btn">
+        <p class="content">
+            The Haldi ceremony was a joyous and vibrant affair, filled with laughter and traditional rituals. The bride and groom were smeared with turmeric paste by family and friends, a symbolic act believed to bless and purify them before the wedding. 
+        </p>
+        <a href="http://10.16.57.240:5500/FSD/Zomato/signup.html" target="_blank"><button class="book-now">Book Now</button></a>
+    </div>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.classList.add('opened');
+        });
+    });
+</script>
+
+</body>
+</html>

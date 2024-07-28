@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet</title>
+    <link rel="stylesheet" href="../cssFiles/allpage.css"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(#7F042F, #BD0856, #d66881, #F48D7B, #F79BCC);
+    }
+</style>
+<body>
+    <div class="body" id="bdyyy8">
+        <div class="page-heading">
+            <h1 onclick="display8()">Wedding Delights</h1>
+        </div>
+        <div class="cards">
+            <div class="container">
+                <div class="card" style="--i:-3;" data-text=""><img src="https://i.pinimg.com/736x/cc/f0/32/ccf03221e001cb65b6b8c5d81ceba57a.jpg"/></div>  
+                <div class="card" style="--i:-2;" data-text=""><img src="https://asset1.zankyou.com/images/mag-post/6ed/c5ca/685//-/in/wp-content/uploads/2017/04/The-Ocean-Pearl-Retreat1.jpg "/></div>  
+                <div class="card" style="--i:-1;" data-text=""><img src="https://cdn0.weddingwire.in/vendor/0799/3_2/960/jpg/wedding-venue-divyata-inn-marriage-lawn-lawn-space-1_15_230799-163414229474681.jpeg "/></div>  
+                <div class="card" style="--i:0;" data-text=""><img src="https://i.pinimg.com/736x/e5/6b/ac/e56bacef3754f9a3e674b773a34b50f9.jpg "/></div>  
+                <div class="card" style="--i:1;" data-text=""><img src="https://cdn0.weddingwire.in/vendor/0799/3_2/960/jpg/wedding-venue-divyata-inn-marriage-lawn-lawn-space-1_15_230799-163414229474681.jpeg "/></div>  
+                <div class="card" style="--i:2;" data-text=""><img src="https://asset1.zankyou.com/images/mag-post/6ed/c5ca/685//-/in/wp-content/uploads/2017/04/The-Ocean-Pearl-Retreat1.jpg "/></div>  
+                <div class="card" style="--i:3;" data-text=""><img src="https://d28w5yx6jp7qan.cloudfront.net/PurpleBling-75380045_158566925538896_6406517632693960704_o-2096154334.jpg "/></div>
+            </div>
+        </div>
+        <div class="content_btn">
+            <p class="content">
+                <!-- The Haldi ceremony was a joyous and vibrant affair, filled with laughter and traditional rituals. The bride and groom were smeared with turmeric paste by family and friends, a symbolic act believed to bless and purify them before the wedding.  -->
+                Our Wedding Services was a stunning showcase of elegance and celebration. Surrounded by family and friends, the bride-to-be enjoyed a day filled with joy, laughter, and heartfelt moments. From beautiful decorations to special surprises, every detail was  planned to honor and celebrate her upcoming wedding.
+
+            </p>
+            <button class="book-now">Book Now</button>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.classList.add('opened');
+        });
+    });
+</script>
+
+</body>
+</html>
