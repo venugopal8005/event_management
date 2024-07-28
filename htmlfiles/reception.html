@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="../cssFiles/allpage.css"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(#e54f34, #ea8c41, #ef6f5c, #db8168, #b04133);
+    }
+</style>
+<body>
+    <div class="body" id="bdyyy2">
+        <div class="page-heading">
+            <h1 onclick="display2()">Reception</h1>
+        </div>
+        <div class="cards">
+            <div class="container">
+                <div class="card" style="--i:-3;" data-text=""><img src="https://i.pinimg.com/originals/d1/03/b4/d103b4c818e44297ff9d16eb61c34df5.jpg"/></div>   
+                <div class="card" style="--i:-2;" data-text=""><img src="https://cdn-egmeh.nitrocdn.com/tSkixIbGRvoIgOXvcACceCYfqDNBhXRj/assets/images/optimized/rev-4415650/oasisweddingplanner.com/wp-content/uploads/2022/07/low-cost-wedding-stage-decoration-1024x768.jpeg"/></div>  
+                <div class="card" style="--i:-1;" data-text=""><img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2023/8/Heaven_4_0_1200.jpg"/></div>  
+                <div class="card" style="--i:0;" data-text=""><img src="https://www.oyorooms.com/blog/wp-content/uploads/2018/02/The-Mandap.jpeg"/></div>  
+                <div class="card" style="--i:1;" data-text=""><img src="https://5.imimg.com/data5/EE/CO/JA/SELLER-101472973/decorative-wedding-mandap-500x500.jpg"/></div>  
+                <div class="card" style="--i:2;" data-text=""><img src="https://i0.wp.com/decorsutrablog.com/wp-content/uploads/2020/06/DecorSutra_Wedding-Decor-3-_Bhoomi-EVents-Planners.jpg?resize=780%2C698&ssl=1"/></div>  
+                <div class="card" style="--i:3;" data-text=""><img src="https://i.pinimg.com/originals/85/4f/76/854f763bf84ed16fe3250b00c3d406b5.jpg"/></div>
+    
+            </div>
+        </div>
+        <div class="content_btn">
+            <p class="content">
+                The reception was a grand celebration of love and joy. The newlyweds and their guests gathered for an evening filled with laughter, dancing, and delightful cuisine. The venue was elegantly decorated, reflecting the couple’s unique style and creating a warm, festive atmosphere
+            </p>
+            <button class="book-now">Book Now</button>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.classList.add('opened');
+        });
+    });
+</script>
+
+</body>
+</html>

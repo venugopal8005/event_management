@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="../cssFiles/allpage.css"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(to bottom, #FF9A9E, #FAD0C4);
+    }
+</style>
+<body>
+    <div class="body" id="bdyyy3">
+        <div class="page-heading">
+            <h1 onclick="display3()">Wedding</h1>
+        </div>
+        <div class="cards">
+            <div class="container">
+                <div class="card" style="--i:-3;" data-text=""><img src="https://i.pinimg.com/736x/e5/12/9b/e5129b7ed5bd3f65cb89080a19bc3455.jpg"/></div>   
+                <div class="card" style="--i:-2;" data-text=""><img src="https://i.pinimg.com/originals/4a/3d/92/4a3d92117c8f7d1d6c4aaece4c09a865.jpg"/></div>  
+                <div class="card" style="--i:-1;" data-text=""><img src="https://i.pinimg.com/736x/a1/ef/b1/a1efb1214002bb6f2bae22e58a9cc7db.jpg"/></div>  
+                <div class="card" style="--i:0;" data-text=""><img src="https://i.ytimg.com/vi/bnopSCIhu1g/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gRCgXMA8=&rs=AOn4CLDTuF3iFzlj7Z56CovUXiSpOfsDmg"/></div>  
+                <div class="card" style="--i:1;" data-text=""><img src="https://i.ytimg.com/vi/oS0DUu-IA_0/sddefault.jpg"/></div>  
+                <div class="card" style="--i:2;" data-text=""><img src="https://3.imimg.com/data3/NO/SX/MY-10286028/22.jpg"/></div>  
+                <div class="card" style="--i:3;" data-text=""><img src="https://4.bp.blogspot.com/-DghUe1KsAV8/W72PyNhmKyI/AAAAAAAAAx8/WyiYJfkdfdsHD8k0aOdsmBV74y1iXN9VACLcBGAs/s1600/IMG-20180613-WA0060.jpg"/></div>
+            </div>
+        </div>
+        <div class="content_btn">
+            <p class="content">
+                <!-- The Haldi ceremony was a joyous and vibrant affair, filled with laughter and traditional rituals. The bride and groom were smeared with turmeric paste by family and friends, a symbolic act believed to bless and purify them before the wedding.  -->
+    
+    "Marriage is  symbolizing a deep commitment to love and support one another. It unites two individuals, blending their lives, families, and dreams.Marriage creates a lifelong partnership built on trust and affection."
+            </p>
+            <button class="book-now">Book Now</button>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.classList.add('opened');
+        });
+    });
+</script>
+
+</body>
+</html>

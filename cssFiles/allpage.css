@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #FF9A8B, #FFB347); */
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.page-heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.page-heading h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #E74C3C, rgb(231, 76, 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust as necessary */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: absolute;
+    width: 240px;
+    height: 350px;
+    background: linear-gradient(135deg, #e09, #d0e);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: grayscale(0) contrast(1);
+}
+
+.container .card.opened {
+    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 120px), -50px);
+}
+
+.container .card.opened img {
+    opacity: 1;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.container .card::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    color: #fff;
+    opacity: 0;
+    font-weight: 500;
+    transition: 0.5s;
+    z-index: 1000;
+    text-align: center;
+    transform: translateY(100px);
+}
+
+.container .card:hover::before {
+    top: -40px;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.container .card::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: transparent;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: -1;
+}
+
+.container .card:hover::after {
+    transform: scaleY();
+}
+
+.container .card:hover {
+    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 120px), -50px) translate(calc(var(--i) * 20px), -50px);
+    z-index: 100;
+}
+
+.container .card:hover img {
+    filter: grayscale(0) contrast(1);
+}
+
+.content_btn {
+    position: absolute;
+    bottom: 20px; 
+    width: 100%;
+    text-align: center;
+    border: 2px solid transparent; 
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    color: #fff;
+}
+
+.content {
+    color: #2F4F4F; 
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.book-now {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #DC143C, #FF8C00);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 46%;
+    bottom:-10px;
+}
+
+.book-now:hover {
+    background: linear-gradient(to right, #FF00FF, #B22222);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container .card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .page-heading h1 {
+        font-size: 3rem;
+    }
+
+    .content_btn {
+        bottom: 10px; /* Adjust as necessary */
+        width: 90%;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .book-now {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .card {
+        width: 150px;
+        height: 250px;
+    }
+
+    .page-heading h1 {
+        font-size: 2rem;
+    }
+
+    .content_btn {
+        bottom: 10px; /* Adjust as necessary */
+        width: 100%;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .book-now {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet</title>
+    <link rel="stylesheet" href="../cssFiles/allpage.css"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(to bottom, #da5a66, #ffbebe);
+    }
+</style>
+<body>
+    <div class="body" id="bdyyy6">
+        <div class="page-heading">
+            <h1 onclick="display6()">Bride To Be</h1>
+        </div>
+        <div class="cards">
+            <div class="container">
+                <div class="card" style="--i:-3;" data-text=""><img src="https://m.media-amazon.com/images/I/71dJ2Q31WtL.jpg"/></div>  
+                <div class="card" style="--i:-2;" data-text=""><img src="https://cdn0.weddingwire.com/vendor/988527/3_2/960/png/file-000_51_725889-164601204532204.jpeg"/></div>  
+                <div class="card" style="--i:-1;" data-text=""><img src="https://i.pinimg.com/736x/ab/1a/46/ab1a46b822c84269d573eae583481578.jpg"/></div>  
+                <div class="card" style="--i:0;" data-text=""><img src="https://i.pinimg.com/736x/e0/99/fc/e099fce2c331b7ca2e78599cbaead9c2.jpg"/></div>  
+                <div class="card" style="--i:1;" data-text=""><img src="https://media.licdn.com/dms/image/D5612AQFhKzcfAqR82g/article-cover_image-shrink_720_1280/0/1685538504721?e=2147483647&v=beta&t=W76NnI_FiltCGqifc9LWblQFMUS5NK7Vx93fLeZufQk"/></div>  
+                <div class="card" style="--i:2;" data-text=""><img src="https://i0.wp.com/amoreusaballoons.com/wp-content/uploads/2022/04/IMG_2698_Original.jpg"/></div>  
+                <div class="card" style="--i:3;" data-text=""><img src="https://i.pinimg.com/736x/32/6a/55/326a552fccc98bd2e2c0ccd9f0967120.jpg"/></div>
+            </div>
+        </div>
+        <div class="content_btn">
+            <p class="content">
+                <!-- The Haldi ceremony was a joyous and vibrant affair, filled with laughter and traditional rituals. The bride and groom were smeared with turmeric paste by family and friends, a symbolic act believed to bless and purify them before the wedding.  -->
+                The 'Bride To Be' event was a stunning showcase of elegance and celebration. Surrounded by family and friends, the bride-to-be enjoyed a day filled with joy, laughter, and heartfelt moments. From beautiful decorations to special surprises, every detail was  planned to honor and celebrate her upcoming wedding.
+
+            </p>
+            <button class="book-now">Book Now</button>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.classList.add('opened');
+        });
+    });
+</script>
+
+</body>
+</html>
