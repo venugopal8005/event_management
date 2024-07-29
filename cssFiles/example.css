@@ -51,9 +51,9 @@ body{
   width: 50%;
   display: flex;
   align-items: center;
-  background-color:  #bbc9e5;
+  background-color:  #273F6F;
   
-  border: solid white ;
+  /* border: solid white ; */
   border-right: 0;
   justify-content: space-around;
   transition: all 1s;
@@ -69,10 +69,10 @@ body{
   align-items: center;
   height: 100%;
   width: 50%;
-  border: solid #d8ba6f;
-  border-left: 0;
+  /* border: solid #d8ba6f; */
+  /* border-left: 0; */
   font-size: 100px;
-  background-color:  #273F6F;;
+  background-color:  #273F6F;
   transition: all 1s;
   /* background-color: rgb(217, 19, 121); */
   /* background: linear-gradient(45deg, #FFD700, #E3C389, #DAA520, #E3C389, #FFD700); */

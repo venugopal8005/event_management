@@ -7,8 +7,8 @@
 
 body {
     /* background:linear-gradient(to left,rgb(32, 123, 179),rgb(116, 210, 90)) ; */
-    /* background-image: url("../Images/backgroundofabout.jpg"); */
-    background-color: #E9E2DA;
+    background-image: url("https://img.freepik.com/free-psd/3d-landscape-with-fairytale-elements_23-2150048941.jpg?t=st=1722226466~exp=1722230066~hmac=6b8261475831f8ff8111e25285b09a126b94fd9fd543a0eae2d110e0049c3ae1&w=1380");
+    /* background-color: #a5551c; */
     background-size: cover;
 }
 
@@ -69,8 +69,10 @@ body {
     position: relative;
     top: 10px;
     /* background-color: aqua; */
-    background-color: #E9E2DA;
-    border-radius: 10px;
+    background-color: #dae1e9;
+    backdrop-filter: blur(30px);
+    /* border-radius: 10px; */
+    padding: 5px 20px;
 
 }
 .card {
