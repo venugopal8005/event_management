@@ -27,5 +27,5 @@ function showForm() {
 }
 function success(){
     window.alert("Booking Successful");
-    window.location.href = "http://192.168.45.224:5501/htmlfiles/example.html#";
+    window.location.href = "../htmlfiles/example.html";
 }

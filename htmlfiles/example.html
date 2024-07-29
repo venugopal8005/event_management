@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../cssFiles/home.css">
     <link rel="stylesheet" href="../cssFiles/nonslider.css">
     <link rel="stylesheet" href="../cssFiles/onhover.css">
+    <link rel="stylesheet" href="../cssFiles/calender.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
@@ -33,7 +34,7 @@
                 </div>
             </div>
             <div class="main2">
-                <button onclick="swipe()">VISIT OUR PAGE</button>
+                <a href="#"><button onclick="swipe()" >VISIT OUR PAGE</button></a>
             </div>
 
         </div>
@@ -49,7 +50,7 @@
                     <a href="../htmlfiles/cards.html" target="_blank"><div class="ops">Clients</div></a>
                         <a href="../htmlfiles/reviews.html" target="_blank"><div class="ops">Reviews</div></a>
 
-                  
+
 
                 </div>
             </div>
@@ -138,8 +139,9 @@
 
             </div>
         </div>
+
         
-            <div class="footer-basic">
+        <div class="footer-basic">
                 <footer class="footer">
                     <div class="social"><a href="https://www.instagram.com/"  target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/" target="_blank"  ><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a></div>
                     <ul class="list-inline">
@@ -152,6 +154,42 @@
                     <p class="copyright">Company Name © 2018</p>
                 </footer>   
             </div>
+            <div class="calender" onclick="calen()">
+                    <img   src="../Images/Tilda_Icons_1ed_calendar.svg" alt="">
+            </div>
+            
+                <div class="container-calendar"id="dateitis">
+                    <div id="right">
+                        <h3 id="monthAndYear"></h3>
+                        <div class="button-container-calendar">
+                            <button id="previous" onclick="previous()">‹</button>
+                            <button id="next" onclick="next()">›</button>
+                        </div>
+                        <table class="table-calendar" id="calendar" data-lang="en">
+                            <thead id="thead-month"></thead>
+                            <tbody id="calendar-body"></tbody>
+                        </table>
+                        <div class="footer-container-calendar">
+                            <label for="month">Jump To: </label>
+                            <select id="month" onchange="jump()">
+                                <option value="0">Jan</option>
+                                <option value="1">Feb</option>
+                                <option value="2">Mar</option>
+                                <option value="3">Apr</option>
+                                <option value="4">May</option>
+                                <option value="5">Jun</option>
+                                <option value="6">Jul</option>
+                                <option value="7">Aug</option>
+                                <option value="8">Sep</option>
+                                <option value="9">Oct</option>
+                                <option value="10">Nov</option>
+                                <option value="11">Dec</option>
+                            </select>
+                            <select id="year" onchange="jump()"></select>
+                        </div>
+                    </div>
+                </div>
+            
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -162,7 +200,7 @@
             document.querySelector('.container1').classList.add('cards-open');
         });
     </script>
-
+<script src="../js files/calender.js"></script>
     <script src="../js files/example.js"></script>
 </body>
 
