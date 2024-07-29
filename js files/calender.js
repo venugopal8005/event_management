@@ -218,8 +218,11 @@ function showCalendar(month, year) {
                     cell.appendChild(createEventTooltip(date, month, year));
                 }
 
-                cell.addEventListener('click', () => showEventDetails(date, month, year));
-
+                cell.addEventListener('click', () => {
+                  // alert("ndijcnwdwn");
+                  var f = document.getElementById("event-details-container");
+                  f.style.display="flex";
+                });
                 row.appendChild(cell);
                 date++;
             }
