@@ -1,7 +1,10 @@
 var x = true;
+var g = 1;
+
+
 
 function swipe() {
-    if (x === true) {
+    if (x === true && g == 1) {
         var l = document.getElementsByClassName("left")[0];
         l.classList.add(`animate`);
 
@@ -9,9 +12,18 @@ function swipe() {
         r.style.width = "0";
         var k = document.getElementsByClassName("main2")[0];
         k.setAttribute(`style`, `display:none`);
+      
         setTimeout(sample, 1000);
+        g = 0;
+        x = false;
     }
+    //   l.remove();
+    //     r.remove();
+   
 }
+
+
+
 
 function sample() {
     let mainAddress = document.getElementById("main");
@@ -32,7 +44,7 @@ var swiper = new Swiper(".mySwiper", {
         slideShadows: true,
     },
     autoplay: {
-        delay: 10000, // Auto slide every 2.5 seconds
+        delay: 5000, // Auto slide every 2.5 seconds
         disableOnInteraction: false,
     },
     loop: true,
@@ -222,3 +234,17 @@ function display8(){
 
 
 }
+// var loader = window.addEventListener("load" ,()=>{
+//     var g = 1;
+//     // if (x === true && g) {
+//     //     var l = document.getElementsByClassName("left")[0];
+//     //     l.classList.add(`animate`);
+
+//     //     var r = document.getElementsByClassName("right")[0];
+//     //     r.style.width = "0";
+//     //     var k = document.getElementsByClassName("main2")[0];
+//     //     k.setAttribute(`style`, `display:none`);
+//     //     setTimeout(sample, 1000);
+//     //     g = 0;
+//     // }
+// })
